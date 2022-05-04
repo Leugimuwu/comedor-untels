@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+p,
+h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* background: #303030; */
+  background: var(--bs-dark);
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+body::-webkit-scrollbar,
+.mat-table::-webkit-scrollbar,
+.mat-tab-group::-webkit-scrollbar,
+.mat-list::-webkit-scrollbar,
+.mat-dialog-container::-webkit-scrollbar,
+.mat-selection-list::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb,
+.mat-table::-webkit-scrollbar-thumb,
+.mat-tab-group::-webkit-scrollbar-thumb,
+.mat-list::-webkit-scrollbar-thumb,
+.mat-dialog-container::-webkit-scrollbar-thumb,
+.mat-selection-list::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: whitesmoke;
+}

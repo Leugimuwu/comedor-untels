@@ -1,0 +1,8 @@
+<div *ngIf="isLoading">
+  <app-spinner></app-spinner>
+</div>
+<div *ngIf="!isLoading">
+  <div class="container mt-3">
+    <app-food-list></app-food-list>
+  </div>
+</div>

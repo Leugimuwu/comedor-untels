@@ -1,0 +1,30 @@
+<mat-card class="mb-3">
+  <img
+    mat-card-image
+    [src]="food.urlImagen"
+    alt="{{ food.descripcion }}"
+    class="card-img-bottom"
+    *ngIf="food.urlImagen"
+  />
+  <mat-card-title
+    ><h1 class="food__title">{{ food.nombre }}</h1></mat-card-title
+  >
+  <mat-card-content class="food__info">
+    <p class="text-secondary">Por Untels Comedor</p>
+    <p class="food__price">S/ {{ food.precio }}</p>
+    <p class="food__description">{{ food.descripcion }}</p>
+  </mat-card-content>
+  <mat-card-actions *ngIf="!isPreview" class="d-flex justify-content-end">
+    <button
+      mat-mini-fab
+      color="accent"
+      class="m-2"
+      (click)="redirectEdit(food.id)"
+    >
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button mat-mini-fab color="warn" class="m-2" (click)="delete(food)">
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

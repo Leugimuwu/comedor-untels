@@ -1,0 +1,40 @@
+.menu__tab-item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.625em;
+  padding-bottom: 10px;
+  min-height: 460px;
+}
+
+.menu__list-checks {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.menu__list-previews {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.menu__list-previews-item{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.menu__list-buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.menu__button-group {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.625em;
+}
+
+@media screen and (max-width: 800px) {
+  .menu__tab-item {
+    grid-template-columns: 1fr;
+  }
+}
